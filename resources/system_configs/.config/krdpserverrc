@@ -1,0 +1,3 @@
+[General]
+Certificate=/home/barch/.local/share/krdpserver/krdp.crt
+CertificateKey=/home/barch/.local/share/krdpserver/krdp.key

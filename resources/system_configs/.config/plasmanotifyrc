@@ -1,0 +1,9 @@
+[Badges]
+InTaskManager=false
+
+[DoNotDisturb]
+WhenScreenSharing=false
+WhenScreensMirrored=false
+
+[Notifications]
+ShowPopupTimeout=false

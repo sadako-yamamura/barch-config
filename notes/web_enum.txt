@@ -1,0 +1,2 @@
+# find hidden paths (requires gobuster and seclists)
+gobuster dns -d 154.57.164.80 -w /usr/share/SecLists/Discovery/DNS/namelist.txt
