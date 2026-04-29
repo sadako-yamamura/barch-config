@@ -1,0 +1,25 @@
+# - kitty ~/.config/kitty/kitty.conf
+mkdir -p ~/.config/kitty
+kitty +kitten themes catppuccin-mocha
+echo "background_opacity 0.8" >> ~/.config/kitty/kitty.conf
+
+# - tmux ~/.tmux.conf
+# Change prefix to Ctrl+A
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
+# Enable mouse support
+set -g mouse on
+# Optional status bar customization
+set -g status-bg colour235
+set -g status-fg colour136
+
+# fish
+chsh -s /usr/bin/fish
+set -U fish_greeting ""
+
+# starship ~/.config/fish/config.fish
+echo 'starship init fish | source' >> ~/.config/fish/config.fish
+touch ~/.config/starship.toml
+starship preset pastel-powerline -o ~/.config/starship.toml
+eval "$(starship init fish)"
